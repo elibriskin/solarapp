@@ -59,11 +59,11 @@ c = Census(census_key)
 
 # Reading in all data files
 
-energy = pd.read_csv("C:/Users/brisk/Desktop/EngineeringComputationProject/src/energy.csv")
-countydata = pd.read_csv("C:/Users/brisk/Desktop/EngineeringComputationProject/src/countydata.csv")
+energy = pd.read_csv("https://raw.githubusercontent.com/elibriskin/solarapp/main/src/energy.csv")
+countydata = pd.read_csv("https://raw.githubusercontent.com/elibriskin/solarapp/main/src/countydata.csv")
 countydata.NAME = countydata.NAME.str.replace(" County", "")
 
-energycounty = pd.read_csv("C:/Users/brisk/Desktop/EngineeringComputationProject/src/energycounty.csv")
+energycounty = pd.read_csv("https://raw.githubusercontent.com/elibriskin/solarapp/main/src/energycounty.csv")
 
 # Convert MMBTU units to kwH
 

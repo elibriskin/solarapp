@@ -1,0 +1,11 @@
+census==0.8.19
+censusgeocode==0.5.2
+dash==2.9.3
+matplotlib==3.7.1
+nrel_dev_api==0.1.1
+numpy==1.24.2
+pandas==2.0.0
+plotly==5.14.1
+us==2.0.2
+gunicorn
+dash-tools

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="container-main">
+          <h1>Solar Energy - County Analysis</h1>
+          <p>
+            This application provides a rough overview of solar radiation estimates
+            in relation to current county energy needs.
+          </p>
+          <br />
+          <h3>Select a county</h3>
+          <br />
+          <input type="text" name="" class="county-search-input" />
+          <br />
+          <br />
+          <input type="submit" value="Submit" id="submit-button" />
+        </div>
+        <div class="container-top">
+          <div class="dash" id="box-top1">
+            <p>Projected PV Power (kwH)</p>
+          </div>
+          <div class="dash" id="box-top2">
+            <p>Percentage of Annual Needs</p>
+          </div>
+          <div class="dash" id="box-top3">
+            <p>Solar Irradiance</p>
+          </div>
+        </div>
+        <div class="container-dashboard">
+          <h1>Current County Energy Consumption</h1>
+            <div class="dash" id="box1">
+              <p class="aggregate-label">Electricity</p>
+              <h1 class="stat">0.6380854471</h1>
+            </div>
+            <div class="dash" id="box2">
+              <p class="aggregate-label">Gas (Utility)</p>
+              <h1 class="stat">0.65035</h1>
+            </div>
+            <div class="dash" id="box3">
+              <p class="aggregate-label">Gas (Bottled, Tank, LP)</p>
+              <h1>0.0000000024</h1>
+            </div>
+            <div class="dash" id="box4">
+              <p class="aggregate-label">Fuel</p>
+              <h1 class="stat">0.6380854471</h1>
+            </div>
+            <div class="dash" id="box5">
+              <p class="aggregate-label">Coal</p>
+              <h1 class="stat">0.65035</h1>
+            </div>
+            <div class="dash" id="box6">
+              <p class="aggregate-label">Other</p>
+              <h1>0.0000000024</h1>
+            </div>
+            <div id="box7"></div>
+        </div>
+  </body>
+</html>

@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap");
+
+html {
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Raleway;
+
+  color: white;
+
+  background: rgb(47, 52, 98);
+  background: linear-gradient(
+    110deg,
+    rgba(47, 52, 98, 1) 0%,
+    rgb(14, 1, 39) 100%
+  );
+
+  /* color: rgb(26, 26, 26); */
+
+  /* background: rgb(227, 120, 5);
+  background: linear-gradient(
+    110deg,
+    rgba(227, 120, 5, 1) 23%,
+    rgba(255, 243, 107, 1) 100%
+  ); */
+
+  min-height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+h3 {
+  font-weight: 200;
+}
+
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 0.6fr 1fr 1fr;
+  /* color: #444; */
+  bottom: 0;
+  height: 100vh;
+}
+
+.container-main {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 3;
+  padding: 60px;
+  /* background-color: #252525; */
+}
+
+.container-top {
+  display: grid;
+  margin: 60px;
+  grid-row: 1 / span 3;
+  grid-column: 2 / span 2;
+  height: 100%;
+  margin-bottom: 20px;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#box-top1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#box-top2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#box-top3 {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+.container-dashboard {
+  display: grid;
+  margin: 60px;
+  grid-column: 2 / span 2;
+  grid-row: 4 / span 3;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.dash {
+  background-color: rgb(0, 0, 0, 0.2);
+  border-radius: 10px;
+  grid-row: 1;
+  padding-left: 10px;
+}
+
+#box1 {
+  grid-column: 1;
+}
+
+#box2 {
+  grid-column: 2;
+}
+
+#box3 {
+  grid-column: 3;
+}
+
+#box4 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#box5 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#box6 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#box4 {
+  /* grid-column: 1 / span 3;
+  grid-row: 2 / span 3; */
+  /* background-color: red; */
+}
+
+.county-search-input {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0, 0);
+  color: white;
+  padding: 4px;
+}
+
+.spectra-range-input {
+  float: left;
+  width: 40%;
+  margin-right: 7px;
+}
+
+#submit-button {
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0, 0);
+  border: 1px solid #444;
+  color: white;
+  padding: 5px 10px;
+  transition-duration: 0.5s;
+  margin-top: 20px;
+}
+#submit-button:hover {
+  color: white;
+  border-color: white;
+}
+
+/* .custom-dropdown {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+} */
+
+.custom-dropdown .Select,
+.Select div,
+.Select input,
+.Select span {
+  background: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /*to change the background color of the options*/
+  color: white; /*to change the color of the options */
+}
+
+/* @media screen and (max-width: 600px) {
+  .body {
+    background: linear-gradient(
+      110deg,
+      rgba(47, 52, 98, 1) 0%,
+      rgb(14, 1, 39) 100%
+    );
+  }
+  .container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 500px 1000px;
+    grid-template-columns: 1fr;
+    bottom: 0;
+  }
+
+  .container-main {
+    grid-row: 1;
+    grid-column: 1 / span 1;
+  }
+
+  .container-top {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 3;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr;
+  }
+
+  #box-top1 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+  }
+
+  #box-top2 {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+  }
+
+  #box-top3 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+  }
+  .container-dashboard {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+    margin: 20px 60px;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    grid-template-columns: 1fr;
+  }
+  #box1 {
+    grid-row: 1;
+    grid-column: 1 / span 3;
+  }
+
+  #box2 {
+    grid-row: 2;
+    grid-column: 1 / span 3;
+  }
+
+  #box3 {
+    grid-row: 3;
+    grid-column: 1 / span 3;
+  }
+
+  #box4 {
+    grid-row: 4;
+    grid-column: 1 / span 3;
+  }
+
+  #box5 {
+    grid-row: 5;
+    grid-column: 1 / span 3;
+  }
+
+  #box6 {
+    grid-row: 6;
+    grid-column: 1 / span 3;
+  }
+}
+*/

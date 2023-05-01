@@ -24,10 +24,17 @@ census_key = "643fe7b4cd4581823fb346ee10ece4257c656e88"
 set_nrel_api_key("HSgd1b4hnY5JLV0uq3eXXZdiAZKt0GaEShXEYzsQ")
 c = Census(census_key)
 
-countydata = pd.read_csv("src/countydata.csv")
+# countydata = pd.read_csv("src/countydata.csv")
+# countydata.NAME = countydata.NAME.str.replace(" County", "")
+# energy = pd.read_csv("src/energy.csv")
+# energycounty = pd.read_csv("src/energycounty.csv")
+
+energy = pd.read_csv("https://raw.githubusercontent.com/elibriskin/solarapp/main/src/energy.csv")
+countydata = pd.read_csv("https://raw.githubusercontent.com/elibriskin/solarapp/main/src/countydata.csv")
 countydata.NAME = countydata.NAME.str.replace(" County", "")
-energy = pd.read_csv("src/energy.csv")
-energycounty = pd.read_csv("src/energycounty.csv")
+
+energycounty = pd.read_csv("https://raw.githubusercontent.com/elibriskin/solarapp/main/src/energycounty.csv")
+
 kw = 293.07107
 energycounty['consumption_kw'] = energycounty['Consumption MMBtu'] * kw
 
